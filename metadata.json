@@ -1,0 +1,5 @@
+{
+  "name": "Remix: finQuest",
+  "description": "A financial simulator inspired by Classroom of the Elite, featuring profile-based daily expenses and monthly spending graphs.",
+  "requestFramePermissions": []
+}
