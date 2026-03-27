@@ -41,7 +41,7 @@ export default function AboutUs() {
             </span>
           </h2>
           <p className="text-slate-400 text-lg max-w-3xl mx-auto leading-relaxed">
-            CyberNova was born from a simple idea: financial education should be accessible, 
+            FinQuest was born from a simple idea: financial education should be accessible, 
             engaging, and fun for everyone — from curious teens to ambitious adults. We combine 
             real-world market simulations, AI-powered coaching, and gamified challenges to make 
             mastering money feel like playing your favorite game.

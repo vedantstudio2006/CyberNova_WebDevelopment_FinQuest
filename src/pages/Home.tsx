@@ -7,7 +7,7 @@ import AboutUs from '../components/AboutUs';
 import Footer from '../components/Footer';
 
 export default function Home() {
-  const textChars = "Welcome to CyberNova".split("");
+  const textChars = "Welcome to FinQuest".split("");
 
   return (
     <div className="bg-[#030712] font-sans relative">

@@ -65,7 +65,7 @@ export default function Footer() {
             className="md:col-span-2"
           >
             <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 mb-4">
-              CyberNova
+              FinQuest
             </h3>
             <p className="text-slate-500 text-sm leading-relaxed mb-6 max-w-xs">
               Gamified financial education for the next generation. Learn, simulate, and grow your financial intelligence — risk-free.
@@ -129,7 +129,7 @@ export default function Footer() {
           className="flex flex-col md:flex-row items-center justify-between gap-4"
         >
           <p className="text-slate-600 text-sm">
-            © {new Date().getFullYear()} CyberNova. All rights reserved.
+            © {new Date().getFullYear()} FinQuest. All rights reserved.
           </p>
           <p className="text-slate-600 text-sm flex items-center gap-1">
             Made with <Heart className="w-3.5 h-3.5 text-red-500 inline-block animate-pulse" /> by Team Hash It Out
