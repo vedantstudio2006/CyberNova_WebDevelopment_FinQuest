@@ -13,6 +13,7 @@ import Wallet from './pages/Wallet';
 import Quizzes from './pages/Quizzes';
 import Onboarding from './pages/Onboarding';
 import NetWorthCalculator from './pages/NetWorthCalculator';
+import Home from './pages/Home';
 
 export default function App() {
   const isLoggedIn = useStore((state) => state.isLoggedIn);
@@ -20,7 +21,11 @@ export default function App() {
   return (
     <BrowserRouter>
       {!isLoggedIn ? (
-        <Onboarding />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/onboarding" element={<Onboarding />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
       ) : (
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -30,6 +35,7 @@ export default function App() {
             <Route path="wallet" element={<Wallet />} />
             <Route path="quizzes" element={<Quizzes />} />
             <Route path="net-worth" element={<NetWorthCalculator />} />
+            <Route path="*" element={<Navigate to="/" />} />
           </Route>
         </Routes>
       )}
