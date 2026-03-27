@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import GradientBlinds from '../components/GradientBlinds';
 import Features from '../components/Features';
@@ -97,18 +98,19 @@ export default function Home() {
             transition={{ delay: 1.8, duration: 0.5, type: "spring", stiffness: 100 }}
             className="flex flex-col sm:flex-row gap-4 items-center"
           >
-            <motion.a
-              href="https://finquesthastitout.netlify.app"
-              whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(99, 102, 241, 0.5)" }}
-              whileTap={{ scale: 0.95 }}
-              className="group relative px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full font-bold text-lg transition-all duration-300 flex items-center gap-3 overflow-hidden"
-            >
-              <Sparkles className="w-5 h-5 text-indigo-300 group-hover:animate-pulse" />
-              <span className="relative z-10">Sign In</span>
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              {/* Hover Glare */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-[200%] group-hover:translate-x-[200%] transition-transform duration-1000 ease-in-out" />
-            </motion.a>
+            <Link to="/onboarding">
+              <motion.div
+                whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(99, 102, 241, 0.5)" }}
+                whileTap={{ scale: 0.95 }}
+                className="group relative px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full font-bold text-lg transition-all duration-300 flex items-center gap-3 overflow-hidden cursor-pointer"
+              >
+                <Sparkles className="w-5 h-5 text-indigo-300 group-hover:animate-pulse" />
+                <span className="relative z-10">Sign In</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                {/* Hover Glare */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-[200%] group-hover:translate-x-[200%] transition-transform duration-1000 ease-in-out" />
+              </motion.div>
+            </Link>
           </motion.div>
 
           {/* Scroll indicator */}
