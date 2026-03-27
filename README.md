@@ -1,7 +1,13 @@
 
 
 ## CyberNova_WebDevelopment_FinQuest
-Gamified Financial Literacy for Youth
+**Problem Statement: Gamified Financial Literacy for Youth**
+
+## Problem Overview
+Many young individuals lack financial literacy, leading to poor financial planning, overspending,
+and debt issues. This problem focuses on creating an engaging platform using AI and gamification
+techniques to educate youth about financial management, including saving, investing, budgeting,
+and responsible spending in an interactive and practical manner.
 
 ## Prerequisites
 
@@ -40,3 +46,11 @@ Gamified Financial Literacy for Youth
 - **Icons**: Lucide React
 - **Charts**: Recharts
 - **AI**: Google Gemini API (@google/genai)
+
+
+## Team Members Names
+- Vedant Jinnewar
+- Ajeet Gupta
+- Nayan Bhoyar
+- Vedant Mehetre
+- Uzair Shaikh
